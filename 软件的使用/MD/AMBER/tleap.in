@@ -1,0 +1,12 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+
+loadamberparams py.frcmod
+PY = loadmol2 py.mol2
+system = loadpdb wt1_site1_noh.pdb
+solvatebox system TIP3PBOX 12.0
+addions2 system Na+ 0
+saveamberparm system wt1_site1-solv.prmtop wt1_site1-solv.inpcrd
+savepdb system wt1_site1-solv.pdb
+quit

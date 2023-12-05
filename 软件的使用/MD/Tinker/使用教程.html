@@ -1,0 +1,194 @@
+<!DOCTYPE html><html><head>
+      <title>使用教程</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/codespace/.vscode-remote/extensions/shd101wyy.markdown-preview-enhanced-0.8.10/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="一-蛋白质的模拟">一、蛋白质的模拟 </h1>
+<h4 id="tips在用tinker建模之前建议用amber的tleap生成溶剂化以及中性化的体系以方便后面用cpptraj分析轨迹时将tinker的参数文件转成amber可以识别的prmtop形式需要体系的pdb文件">TIPS:在用tinker建模之前，建议用amber的tleap生成溶剂化以及中性化的体系，以方便后面用cpptraj分析轨迹时，将tinker的参数文件转成amber可以识别的prmtop形式（需要体系的pdb文件） </h4>
+<h3 id="1下载pdb">1.下载pdb </h3>
+<h3 id="2-确定蛋白质的质子化态将pdb转成tinker格式的xyz文件">2. 确定蛋白质的质子化态，将pdb转成tinker格式的xyz文件 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>head -n xx complex.pdb &gt; pro.pdb
+pdbxyz
+pro.pdb
+~/software/tinker/params/amboebabio18.prm
+</code></pre><p>生成两个文件：<code>pro.seq</code>, <code>pro.xyz</code></p>
+<h3 id="3处理配体">3.处理配体 </h3>
+<p><code>sed -n "1000,1020p" complex.pdb &gt; lig.pdb</code><br>
+使用poltype拟合配体的amoeba力场参数<br>
+打开<code>poltype.ini</code>文件，输入：</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>structure=lig.pdb
+numproc=32
+</code></pre><p><code>python.py ~/software/poltype2/PoltypeModules/poltype.py</code><br>
+!!!将该任务提交到计算节点</p>
+<p>生成<code>lig.xyz</code>和<code>lig.key</code>文件<br>
+<code>cp lig.key complex.key</code><br>
+打开<code>complex.key</code>文件将第一行参数文件的地址改成<code>amoebabio18.prm</code>文件的</p>
+<h3 id="4将蛋白质和配体合并">4.将蛋白质和配体合并 </h3>
+<p><code>xyzedit pro.xyz -k complex.key 23 lig.xyz</code><br>
+然后，空格键退出,成<code>pro.xyz_2</code>文件<br>
+<code>cp pro.xyz_2 complex.xyz</code><br>
+也可按交互界面一步一步输入</p>
+<h3 id="5添加水盒子">5.添加水盒子 </h3>
+<p>可以用amber的tleap命令来确定水盒子的大小和水的个数<br>
+复制<code>tinker/example</code>中的<code>water.xyz</code>文件到运行目录，将水中氧的原子类型改为349，氢为350（因为amoebabio18.prm文件中两个原子的类型分别是349,350）<br>
+生成水盒子 <code>xyzedit water.xyz -k complex.key 2000 20 20 20 Y</code>,得到<code>water.xyz_2</code>文件<br>
+<code>2000</code>:水分子数目<br>
+<code>20 20 20</code>:水盒子尺寸<br>
+<code>Y</code>:进行优化</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>cp water.xyz_2 waterbox.xyz
+xyzedit complex.xyz -k complex.key 23 waterbox.xyz
+cp complex.xyz.2 complex_solv.xyz
+</code></pre><h3 id="6添加离子保持体系的电中性">6.添加离子保持体系的电中性 </h3>
+<p>分析体系所带电荷：<code>analyze complex_solv.xyz -k complex.key M</code><br>
+添加离子：<code>xyzedit complex_solv.xyz -k complex.key 26 -1 1021 352 10</code><br>
+<code>-1 1021</code>：溶质的范围<br>
+<code>352</code>：添加离子的原子类型，这里指Na+,而Cl-是363<br>
+<code>10</code>:添加离子的数目<br>
+<code>cp complex_solv.xyz_2 complex_min.xyz</code></p>
+<h3 id="tips以上步骤poltype2也可以做">TIPS:以上步骤poltype2也可以做 </h3>
+<h3 id="7最小化">7.最小化 </h3>
+<p><code>cp complex.key complex_min.key</code><br>
+在<code>complex_min.key</code>文件最后追加：</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>neighbor-list
+integrator respa
+verbose
+x-axis                        92.915000
+y-axis                        88.481000
+z-axis                        100.642000
+polar-eps                      0.0001
+vdw-cutoff                     12.0
+vdw-correction
+ewald
+ewald-cutoff                    7.0
+pme-grid   94 90 102  #slightly bigger than box size,must be even with factors of only 2,3 and 5
+randomseed 12345
+maxiter 2000           # Maximum number of minimisation steps
+steepest-descent       # Use the SD minimisation algorithm
+</code></pre><p>运行命令：<code>minimize complex_min.xyz -k complex_min.key 0.01 &gt; min.log</code><br>
+<code>0.01</code>：rms的阈值<br>
+<code>cp complex_min.xyz.2 complex_nvt1.xyz</code></p>
+<h3 id="8约束蛋白质和配体加热">8.约束蛋白质和配体，加热 </h3>
+<p><code>cp complex_min.key complex_nvp1.key</code><br>
+删除有关最小化的参数，添加：</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>thermostat    bussi
+restraint-position -1,1000,5
+</code></pre><p>运行命令：<code>dynamic complex_nvt1.xyz -k complex_nvt1.key 10000 2.0 10.0 2 298.0  &gt; nvt1.log</code><br>
+<code>10000</code>:模拟步数<br>
+<code>2.0</code>:时间步长，单位：fs<br>
+<code>10.0</code>:每隔10fs保存一帧<br>
+<code>2</code>:NVT模拟</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>Available Statistical Mechanical Ensembles :
+
+    (1) Microcanonical (NVE)
+    (2) Canonical (NVT)
+    (3) Isoenthalpic-Isobaric (NPH)
+    (4) Isothermal-Isobaric (NPT)
+</code></pre><p><code>298</code>:模拟目标温度<br>
+提取轨迹最后一帧，作为下一步模拟的初始坐标文件：<br>
+<code>arcedit complex_nvt1.arc 2 10 10 1</code><br>
+<code>10 10 1</code>:第一帧和最后一帧序号，隔几帧取一个<br>
+<code>cp complex_nvt1.010_1 complex_nvt2.xyz</code></p>
+<h3 id="9无约束加热">9.无约束，加热 </h3>
+<p>去除限制的参数，命令同8</p>
+<h3 id="10npt模拟">10.NPT模拟 </h3>
+<p>添加有关恒压控制器的参数：</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>barostat                        berendsen
+tau-pressure                    1.0
+</code></pre><p>运行命令：<br>
+<code>dynamic9 complex_nvt1.xyz -k complex_nvt2.key 10000 2.0 10.0 4 298.0 1.0 &gt; npt1.log</code><br>
+or <code>mpirun -np 1 dynamic.gpu</code><br>
+tinker-hp 中的<code>printout</code>控制温度和速度的输出<br>
+<code>archive</code>不加就会输出每一帧的坐标，加了则输出轨迹</p>
+<h3 id="11成品模拟">11.成品模拟 </h3>
+<p>同10</p>
+<p>TIPS: cutoff值要小于盒子长度的一半</p>
+<h1 id="二-分析轨迹">二、分析轨迹 </h1>
+<h3 id="1将tinker的参数文件转成amber的prmtop格式">1.将tinker的参数文件转成AMBER的prmtop格式 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>analyze complex.xyz -k complex.key PC &gt; complex.analout
+tinker_to_amber -name complex -title "complex amboeba ff"
+</code></pre><h4 id="tips">TIPS: </h4>
+<ol>
+<li>xyz、analout、key文件前缀一致</li>
+<li>如果是周期性体系，key文件里至少要注明<code>a-axis</code></li>
+<li>pdb文件必须存在，与xyz文件的前缀保持一致，不能存在prmtop,inpcrd文件，会报错，格式不正确可以由vmd生成标准的pdb格式</li>
+<li>key文件中<code>parameters</code>变量对应的参数文件路径必须是绝对路径，后缀<code>prm</code>不需要写，否则程序寻找的是<code>xx.prm.prm</code>文件</li>
+<li>如果没有pdb文件，则用<code>pdbxyz complex.xyz -k complex.xyz</code>生成，seq必须存在，否则无法识别氨基酸，再用</li>
+</ol>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>vi complex.pdb
+:%s/ATOM/HETATM/g
+:wq
+cat complex.pdb |awk '{if($1=="ATOM"){printf "%4s%7d  %-4s%3s%6d%12.3f%8.3f%8.3f\n", $1,$2,$3,$4,$5,$6,$7,$8} else{print $0}}' &gt; complex_1.pdb
+</code></pre><p>生成complex_1.pdb,再用vmd转成标准的pdb文件complex_2.pdb</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>cp complex.pdb raw.pdb
+cp complex_2.pdb complex.pdb
+</code></pre><p>最后再用<code>tinker_to_amber</code>生成prmtop文件<br>
+一、tinker-hp<br>
+1.</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            g018
+  Device name:           mlx5_0
+  Device vendor ID:      0x02c9
+  Device vendor part ID: 4123
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+FIO-F-217/formatted read/unit=5/attempt to read past end of file.
+ File name = 'stdin ',    formatted, sequential access   record = 1
+ In source file getprm.f, at line number 95
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[48534,1],0]
+  Exit code:    127
+</code></pre>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
